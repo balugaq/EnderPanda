@@ -1,5 +1,7 @@
 package dev.j3fftw.enderpanda;
 
+import org.bukkit.plugin.java.JavaPlugin;
+
 import dev.j3fftw.enderpanda.armor.PandaBoots;
 import dev.j3fftw.enderpanda.armor.PandaChestplate;
 import dev.j3fftw.enderpanda.armor.PandaHelmet;
@@ -10,8 +12,7 @@ import dev.j3fftw.enderpanda.items.SpecialBamboo;
 import dev.j3fftw.enderpanda.machines.EnderGenerator;
 import dev.j3fftw.enderpanda.machines.EnderReplacer;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-import me.mrCookieSlime.Slimefun.bstats.bukkit.Metrics;
-import org.bukkit.plugin.java.JavaPlugin;
+import me.mrCookieSlime.bstats.bukkit.Metrics;
 
 public class EnderPanda extends JavaPlugin implements SlimefunAddon {
 
@@ -24,12 +25,12 @@ public class EnderPanda extends JavaPlugin implements SlimefunAddon {
     public void onEnable() {
         instance = this;
 
-        new Metrics(this, 7084);
+        new Metrics(this);
 
         getServer().getPluginManager().registerEvents(new Events(), this);
 
         // Category
-        Items.ENDER_PANDA_CATEGORY.register();
+        Items.ENDER_PANDA_CATEGORY.register(this);
 
         // Items
         new PandaFragment().register(this);
