@@ -12,7 +12,6 @@ import dev.j3fftw.enderpanda.items.SpecialBamboo;
 import dev.j3fftw.enderpanda.machines.EnderGenerator;
 import dev.j3fftw.enderpanda.machines.EnderReplacer;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-import me.mrCookieSlime.bstats.bukkit.Metrics;
 
 public class EnderPanda extends JavaPlugin implements SlimefunAddon {
 
@@ -24,8 +23,6 @@ public class EnderPanda extends JavaPlugin implements SlimefunAddon {
 
     public void onEnable() {
         instance = this;
-
-        new Metrics(this);
 
         getServer().getPluginManager().registerEvents(new Events(), this);
 
