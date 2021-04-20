@@ -50,7 +50,7 @@ public class EnderReplacer extends SlimefunItem implements EnergyNetComponent {
     }
 
     private void setupInterface() {
-        new BlockMenuPreset(getId(), "&5Ender Replacer") {
+        new BlockMenuPreset(getId(), "&5末影人转换器") {
 
             @Override
             public void init() {
@@ -58,7 +58,7 @@ public class EnderReplacer extends SlimefunItem implements EnergyNetComponent {
                     this.addItem(i, ChestMenuUtils.getBackground(), ChestMenuUtils.getEmptyClickHandler());
                 }
 
-                this.addItem(12, new CustomItem(Material.BAMBOO, "&c&lRequired"));
+                this.addItem(12, new CustomItem(Material.BAMBOO, "&c&l转换需求"));
 
                 this.addItem(14, null, (player, i, itemStack, clickAction) -> {
                     ItemStack is = player.getItemOnCursor();

@@ -10,7 +10,7 @@ import org.bukkit.inventory.ItemStack;
 public class PandaFragment extends SlimefunItem {
 
     private static final ItemStack panda = new CustomItem(SkullItem.fromHash(
-        "d188c980aacfa94cf33088512b1b9517ba826b154d4cafc262aff6977be8a"), "&8Panda");
+        "d188c980aacfa94cf33088512b1b9517ba826b154d4cafc262aff6977be8a"), "&8panda");
 
     public PandaFragment() {
         super(Items.ENDER_PANDA_CATEGORY, Items.PANDA_FRAGMENT, RecipeType.MOB_DROP, new ItemStack[] {

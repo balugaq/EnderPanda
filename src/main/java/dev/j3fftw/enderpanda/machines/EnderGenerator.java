@@ -22,7 +22,7 @@ public class EnderGenerator extends AGenerator  {
 
     @Override
     public String getInventoryTitle() {
-        return "&CEnder Pearl Generator";
+        return "&C末影珍珠发电机";
     }
 
     @Override
