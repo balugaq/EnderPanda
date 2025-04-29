@@ -10,7 +10,7 @@ import org.bukkit.potion.PotionEffect;
 public class PandaChestplate extends SlimefunArmorPiece {
 
     public PandaChestplate() {
-        super(Items.ENDER_PANDA_CATEGORY, Items.PANDA_CHESTPLATE, RecipeType.ANCIENT_ALTAR, new ItemStack[]{
+        super(Items.ENDER_PANDA_CATEGORY, Items.PANDA_CHESTPLATE, RecipeType.MAGIC_WORKBENCH, new ItemStack[]{
                         Items.PANDA_FRAGMENT, null, Items.PANDA_FRAGMENT,
                         Items.PANDA_FRAGMENT, Items.PANDA_FRAGMENT, Items.PANDA_FRAGMENT,
                         Items.PANDA_FRAGMENT, Items.PANDA_FRAGMENT, Items.PANDA_FRAGMENT
